@@ -1,15 +1,5 @@
-import { Center } from "@mantine/core";
-import Explorer from "components/translate/Explorer";
-import { css } from "styled-components";
+import SinglePageApp from "components/SinglePageApp";
 
 export default function Index() {
-  return (
-    <Center
-      css={css`
-        height: 100%;
-      `}
-    >
-      <Explorer />
-    </Center>
-  );
+  return <SinglePageApp />;
 }
