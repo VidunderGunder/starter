@@ -45,4 +45,4 @@ next-env.d.ts
 /prisma/dev.db-journal
 
 # lock files
-.lock
+yarn.lock
