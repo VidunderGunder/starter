@@ -10,7 +10,7 @@ A fullstack cross-platform template using:
 
 Automatic CRUD API, GraphQL API and types generated from Prisma.
 
-It's like a very opinionated variant of [RedwoodJS](https://redwoodjs.com/) with a focus on mobile.
+It's like a very opinionated variant of [RedwoodJS](https://redwoodjs.com/).
 
 ## 🚀 Quickstart (Web)
 
@@ -28,7 +28,7 @@ yarn dev
 ## 📱 iOS and Android
 
 Setup [Capacitor](https://capacitorjs.com/docs/getting-started) for iOS or Android (or both)
-
+starrter
 Build the mobile apps:
 
 ```bash
