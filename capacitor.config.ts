@@ -3,7 +3,7 @@ import { CapacitorConfig } from "@capacitor/cli";
 const config: CapacitorConfig = {
   appId: "com.example.app",
   appName: "starter",
-  webDir: "public",
+  webDir: "out",
   bundledWebRuntime: false,
 };
 
