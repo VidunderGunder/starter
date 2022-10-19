@@ -1,5 +1,19 @@
 # Starter
 
+A fullstack cross-platform template using:
+
+- [Next.js](https://nextjs.org/)
+- [Prisma](https://www.prisma.io/)
+- [GraphQL (Apollo)](https://www.apollographql.com/)
+- [Capacitor](https://capacitorjs.com/)
+- [Storybook](https://storybook.js.org/)
+
+Automatic CRUD API, GraphQL API and types generated from Prisma.
+
+It's like a very opinionated variant of [RedwoodJS](https://redwoodjs.com/) with a focus on mobile.
+
+## 🚀 Quickstart (Web)
+
 Install [Node.js](https://nodejs.org/en/download/) (between 16.10.0 and 17.0.0)
 
 Install [Yarn](https://yarnpkg.com/en/docs/install) (v1.22.19 or higher)
@@ -9,6 +23,28 @@ Install dependencies and start development:
 ```bash
 yarn
 yarn dev
+```
+
+## 📱 iOS and Android
+
+Setup [Capacitor](https://capacitorjs.com/docs/getting-started) for iOS or Android (or both)
+
+Build the mobile apps:
+
+```bash
+yarn mobile-build
+```
+
+Open the iOS app in Xcode:
+
+```bash
+npx cap open ios
+```
+
+Open the Android app in Android Studio:
+
+```bash
+npx cap open android
 ```
 
 ## Docs
