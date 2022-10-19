@@ -16,6 +16,8 @@
     "reset": "yarn delete && yarn migrate",
     "dev": "ts-node prisma/scripts/init.ts && next dev & npx prisma studio --browser none & yarn storybook",
     "build": "next build",
+    "export": "next export",
+    "build-mobile": "next build && next export && npx cap sync",
     "start": "next start",
     "lint": "next lint",
     "storybook": "yarn start-storybook -p 6006",
@@ -113,7 +115,7 @@
     "storybook-addon-swc": "^1.1.9",
     "ts-node": "^10.9.1",
     "typegraphql-prisma": "^0.22.0",
-    "typescript": "4.8.4",
+    "typescript": "^4.8.4",
     "typescript-styled-plugin": "^0.18.2",
     "webpack": "^5.74.0"
   }

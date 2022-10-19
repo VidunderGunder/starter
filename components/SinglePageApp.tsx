@@ -1,10 +1,11 @@
 import { ComponentPropsWithoutRef, forwardRef } from "react";
-import { Box, BoxProps } from "@mantine/core";
+import { CenterProps } from "@mantine/core";
+import CenteredBox from "./general/CenteredBox";
 
 type Props = {
   // Component props here
 } & Omit<ComponentPropsWithoutRef<"div">, "children"> &
-  BoxProps;
+  CenterProps;
 
 export default forwardRef<HTMLDivElement, Props>(function SinglePageApp(
   { ...props },
@@ -12,13 +13,13 @@ export default forwardRef<HTMLDivElement, Props>(function SinglePageApp(
 ) {
   // Your logic
   return (
-    <Box ref={ref} {...props}>
+    <CenteredBox {...props}>
       Your Single Page Application here. <br />
-      When you want to move to having multiple pages, you can look into how{" "}
+      For multiple pages, look into how{" "}
       <a href="https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website">
         Next.js
       </a>{" "}
       works.
-    </Box>
+    </CenteredBox>
   );
 });
