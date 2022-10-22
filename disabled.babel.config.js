@@ -1,4 +1,5 @@
-// Rename to babel.config.js to enable (disables SWC)
+// Name file `babel.config.js` to enable Babel (disables SWC)
+// Name file `disabled.babel.config.js` to disable Babel (enables SWC)
 
 const styledConfig = require("./styled.config");
 

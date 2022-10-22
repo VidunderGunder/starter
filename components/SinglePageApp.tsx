@@ -4,8 +4,7 @@ import CenteredBox from "./general/CenteredBox";
 
 type Props = {
   // Component props here
-} & Omit<ComponentPropsWithoutRef<"div">, "children"> &
-  CenterProps;
+} & Omit<ComponentPropsWithoutRef<"div"> & CenterProps, "children">;
 
 export default forwardRef<HTMLDivElement, Props>(function SinglePageApp(
   { ...props },

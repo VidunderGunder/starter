@@ -1,5 +1,19 @@
 # Starter
 
+A fullstack cross-platform template using:
+
+- [Next.js](https://nextjs.org/)
+- [Prisma](https://www.prisma.io/)
+- [GraphQL (Apollo)](https://www.apollographql.com/)
+- [Capacitor](https://capacitorjs.com/)
+- [Storybook](https://storybook.js.org/)
+
+Automatic CRUD API, GraphQL API and types generated from Prisma.
+
+It's like a very opinionated variant of [RedwoodJS](https://redwoodjs.com/).
+
+## 🚀 Quickstart (Web)
+
 Install [Node.js](https://nodejs.org/en/download/) (between 16.10.0 and 17.0.0)
 
 Install [Yarn](https://yarnpkg.com/en/docs/install) (v1.22.19 or higher)
@@ -11,13 +25,35 @@ yarn
 yarn dev
 ```
 
+## 📱 iOS and Android
+
+Setup [Capacitor](https://capacitorjs.com/docs/getting-started) for iOS or Android (or both)
+
+Build the mobile apps:
+
+```bash
+yarn mobile-build
+```
+
+Open the iOS app in Xcode:
+
+```bash
+yarn ionic cap run ios -l --external
+```
+
+Open the Android app in Android Studio:
+
+```bash
+yarn ionic cap run android -l --external
+```
+
 ## Docs
 
 Before the Storybook is ready for deployment, you can view the docs locally by starting development and visiting http://localhost:6006/ (should happen automagically with the script).
 
-> Why aren't the docs available in the README?
+> Why aren't all the docs available in the README?
 
-It's very interactive and running everything live locally, so it's quick and easy to get started.
+Some of the docs is very interactive and running everything live locally.
 
 ## TODOs
 

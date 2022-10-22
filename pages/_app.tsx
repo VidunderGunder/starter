@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { GlobalCSS } from "../styles/styles";
 import { UniversalMantineProvider } from "components/mantine/UniversalMantineProvider";
+import "@ionic/react/css/core.css";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -12,7 +13,7 @@ export default function App(props: AppProps) {
         <title>Starter</title>
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
       </Head>
       <UniversalMantineProvider>
