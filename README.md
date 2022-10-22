@@ -28,7 +28,6 @@ yarn dev
 ## 📱 iOS and Android
 
 Setup [Capacitor](https://capacitorjs.com/docs/getting-started) for iOS or Android (or both)
-
 Build the mobile apps:
 
 ```bash
