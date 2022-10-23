@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, forwardRef } from "react";
 import { CenterProps } from "@mantine/core";
-import CenteredBox from "./general/CenteredBox";
+import CenteredBox from "./general/FullHeightCenter";
 
 type Props = {
   // Component props here
