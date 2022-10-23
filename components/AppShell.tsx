@@ -5,6 +5,7 @@ import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
 
 import Tabs from "./pages/Tabs";
+import { css } from "@emotion/react";
 
 setupIonicReact({
   mode: "ios",

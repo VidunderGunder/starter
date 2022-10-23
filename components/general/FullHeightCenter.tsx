@@ -4,10 +4,9 @@ import { css } from "styled-components";
 
 type Props = {
   // Component props here
-} & ComponentPropsWithoutRef<"div"> &
-  CenterProps;
+} & Partial<ComponentPropsWithoutRef<"div"> & CenterProps>;
 
-export default forwardRef<HTMLDivElement, Props>(function CenteredBox(
+export default forwardRef<HTMLDivElement, Props>(function FullHeightCenter(
   { children, ...props },
   ref
 ) {
