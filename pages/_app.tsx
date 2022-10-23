@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { GlobalCSS } from "../styles/styles";
-import { UniversalMantineProvider } from "components/mantine/UniversalMantineProvider";
+import { UniversalMantineProvider } from "components/providers/UniversalMantineProvider";
 import "@ionic/react/css/core.css";
 
 export default function App(props: AppProps) {

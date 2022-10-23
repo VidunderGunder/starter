@@ -37,13 +37,13 @@ yarn mobile-build
 Open the iOS app in Xcode:
 
 ```bash
-yarn ionic cap run ios -l --external
+npx ionic cap run ios -l --external
 ```
 
 Open the Android app in Android Studio:
 
 ```bash
-yarn ionic cap run android -l --external
+npx ionic cap run android -l --external
 ```
 
 ## Docs
