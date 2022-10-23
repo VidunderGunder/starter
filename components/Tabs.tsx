@@ -6,11 +6,12 @@ import {
   IonTabButton,
   IonIcon,
 } from "@ionic/react";
-import { flash } from "ionicons/icons";
+import { home, fish } from "ionicons/icons";
 
-import Home from "./Home";
 import { css } from "styled-components";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
+import Home from "./pages/Home";
+import NotHome from "./pages/NotHome";
 
 type TabProps = Pick<
   ComponentPropsWithoutRef<typeof Route>,
@@ -20,12 +21,19 @@ type TabProps = Pick<
 
 const tabs: TabProps[] = [
   {
-    path: "/feed",
+    path: "/home",
     render: () => <Home />,
-    icon: flash,
+    icon: home,
   },
-  // Add tab here, and a tab bar will appear
+  // Uncomment below to add a tab and show the tab bar
+  // {
+  //   path: "/not-home",
+  //   render: () => <NotHome />,
+  //   icon: fish,
+  // },
 ];
+
+export const defaultTab = tabs[0];
 
 export default function Tabs() {
   return (
@@ -35,15 +43,19 @@ export default function Tabs() {
           --background: transparent;
           border: none;
         }
+        ion-tab-button {
+          --background: transparent;
+          max-width: 3.5rem;
+        }
       `}
     >
       <IonRouterOutlet>
         {tabs.map((tab, index) => (
-          <Route key={index} path={`/tabs${tab.path}`} render={tab.render} />
+          <Route key={index} path={`/app${tab.path}`} render={tab.render} />
         ))}
         <Route
-          path="/tabs"
-          render={() => <Redirect to="/tabs/feed" />}
+          path="/app"
+          render={() => <Redirect to="/app/home" />}
           exact={true}
         />
       </IonRouterOutlet>
@@ -52,7 +64,7 @@ export default function Tabs() {
           <IonTabButton
             key={index}
             tab={`tab${index}`}
-            href={`/tabs${tab.path}`}
+            href={`/app${tab.path}`}
           >
             <IonIcon icon={tab.icon} />
           </IonTabButton>

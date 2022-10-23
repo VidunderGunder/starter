@@ -4,8 +4,7 @@ import { StatusBar, Style } from "@capacitor/status-bar";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
 
-import Tabs from "./pages/Tabs";
-import { css } from "@emotion/react";
+import Tabs, { defaultTab } from "./Tabs";
 
 setupIonicReact({
   mode: "ios",
@@ -26,10 +25,10 @@ const AppShell = () => {
     <IonApp>
       <IonReactRouter>
         <IonRouterOutlet id="main">
-          <Route path="/tabs" render={() => <Tabs />} />
+          <Route path="/app" render={() => <Tabs />} />
           <Route
             path="/"
-            render={() => <Redirect to="/tabs/feed" />}
+            render={() => <Redirect to={`/app${defaultTab.path}`} />}
             exact={true}
           />
         </IonRouterOutlet>

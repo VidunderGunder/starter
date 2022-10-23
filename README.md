@@ -6,6 +6,7 @@ A fullstack cross-platform template using:
 - [Prisma](https://www.prisma.io/)
 - [GraphQL (Apollo)](https://www.apollographql.com/)
 - [Capacitor](https://capacitorjs.com/)
+- [Ionic](https://ionicframework.com/) (based on )
 - [Storybook](https://storybook.js.org/)
 
 Automatic CRUD API, GraphQL API and types generated from Prisma.
